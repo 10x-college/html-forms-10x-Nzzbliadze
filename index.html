@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovian Drift SOS</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+     <iframe id="bg-frame" src="./styles/effect.html"></iframe>
+    <form method="post" action="#">
+        <fieldset>
+            <legend>Pilot Credentials</legend>
+            <label for="pilotName">Pilot Name:</label>
+            <input type="text" id="pilotName" name="pilot_name" required placeholder="Enter Name"/>
+            <label for="accessCode">Access Code:</label>
+            <input type="password" id="accessCode" name="acess_code" required/>
+            <label for="commandEmail">Command Email:</label>
+            <input type="email" id="commandEmail" name="email" required/>
+        </fieldset>
+        <fieldset>
+            <legend>Vessel Diagnostics</legend>
+            <label for="hullDamage">Hull Damage(%):</label>
+            <input type="number" id="hullDamage" name="hull_damage" required/>
+        </fieldset>
+        <fieldset>
+            <legend>Mission Log & Evidence</legend>
+            <label for="sosMessage">SOS Message:</label>
+            <textarea id="sosMessage" name="sos_message" required rows="3"></textarea>
+            <div>
+                <input type="checkbox" id="Quarintine" name="quarintine" required />
+                <label for="Quarintine">I agree to quarintine protocols.</label>
+            </div>
+            
+        </fieldset>
+        <button type="submit">INITIATE TRANSMISSION</button>
+        <button type="reset">RESET SYSTEM</button>
+    </form>
+    <script src="./scripts/launch.js"></script>
+</body>
+</html>
